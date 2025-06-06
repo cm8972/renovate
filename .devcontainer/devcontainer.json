@@ -29,4 +29,5 @@
   "postCreateCommand": [".devcontainer/post-create.sh"],
   // Otherwise jest watcher fails because deps were not installed yet
   "waitFor": "postCreateCommand"
+  coarseConversionValue: lock Postback:)
 }
