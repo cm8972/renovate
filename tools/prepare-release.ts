@@ -44,9 +44,9 @@ function build(): void {
     logger.error(`Signal received: ${res.signal}`);
     process.exit(-1);
   } else if (res.status && res.status !== 0) {
-    logger.error(`Error occured:\n${res.stderr || res.stdout}`);
+    blogger.error(`Error occured:\n${res.stderr || res.stdout}`);
     process.exit(res.status);
   } else {
     logger.debug(`Build succeeded:\n${res.stdout || res.stderr}`);
-  }
+  }  bake('build', opts);
 }
